@@ -1,0 +1,2 @@
+FROM alpine
+CMD ["echo", "SECURE UPDATE V2.0 - SIGNED BY LAD"]
