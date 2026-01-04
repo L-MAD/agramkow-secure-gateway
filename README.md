@@ -12,7 +12,7 @@ This repository contains the infrastructure configuration, security scripts, and
 
 - `/edge-deployment`: Configuration for the Azure IoT Edge runtime.
 - `/security`: Bash scripts used for hardening the Ubuntu VM and performing the signing ceremony.
-- `/src`: Source code for the `SimulatedTemperatureSensor` module.
+- `/src`: Source code for the `secure-sensor` module.
 
 ## 🚀 Usage
 
@@ -37,5 +37,5 @@ To run the verification command successfully, you must authenticate with the **R
 2. Verify Image:
 
    ```bash
-   cosign verify --key cosign.pub acrladsecure.azurecr.io/simulatedtemperaturesensor:latest
+   cosign verify --key cosign.pub acrladsecure.azurecr.io/secure-sensor:v2
    ```
